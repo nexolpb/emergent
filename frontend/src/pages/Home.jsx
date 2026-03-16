@@ -50,6 +50,9 @@ const translations = {
     // Local reassurance
     localReassurance: 'Para familias, productores y visitantes de Guanacaste — soluciones veterinarias y agropecuarias en un solo lugar en Liberia.',
     
+    // Cattle banner caption
+    cattleBannerCaption: 'Mascotas y animales de granja — soluciones veterinarias y agropecuarias en un solo lugar.',
+    
     // Trust
     trustHeading: 'Más de 30 años de confianza en Liberia',
     trustNarrative: 'Super Veterinaria Liberia es parte de la vida de muchas familias en Guanacaste. Con más de 30 años de trayectoria en Liberia, combinamos atención veterinaria cercana y profesional con una tienda completa para que encontrés soluciones en un solo lugar. Atendemos mascotas y también animales de granja, además de ofrecer farmacia veterinaria, pet shop, acuario e insumos agropecuarios. Aquí te ayudamos a cuidar lo que más querés—con experiencia, honestidad y trato humano.',
@@ -122,6 +125,9 @@ const translations = {
     
     // Local reassurance
     localReassurance: 'For families, ranchers, and visitors in Guanacaste — vet care and agri solutions in one place in Liberia.',
+    
+    // Cattle banner caption
+    cattleBannerCaption: 'Pets and farm animals — vet care and agri solutions in one place.',
     
     // Trust
     trustHeading: 'Over 30 years of trusted care in Liberia',
@@ -286,27 +292,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Cattle Banner */}
-      <section className="relative h-64 md:h-80 overflow-hidden">
-        <div 
-          className="absolute inset-0 z-0"
-          style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1759825905789-ec930ff66e66?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwxfHxjYXR0bGUlMjBjb3clMjBwYXN0dXJlJTIwdHJvcGljYWwlMjBncmVlbnxlbnwwfHx8fDE3NzM2MTg1OTR8MA&ixlib=rb-4.1.0&q=85')`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundAttachment: 'fixed'
-          }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-vetGreen/80 to-vetGreen/60 z-10" />
-        <div className="container mx-auto px-4 h-full flex items-center relative z-20">
-          <div className="max-w-3xl">
-            <p className="text-2xl md:text-3xl text-white font-semibold leading-relaxed">
-              {t.localReassurance}
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Services Section */}
       <section className="py-16 md:py-24 bg-warmWhite">
         <div className="container mx-auto px-4">
@@ -366,6 +351,27 @@ export default function Home() {
                 </Card>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Cattle Banner - Guanacaste Culture */}
+      <section className="relative h-72 md:h-96 overflow-hidden">
+        <div 
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: `url('https://images.unsplash.com/photo-1577756113290-7f03c7dc2fb3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwyfHxjYXR0bGUlMjBjb3clMjBwYXN0dXJlJTIwdHJvcGljYWwlMjBncmVlbnxlbnwwfHx8fDE3NzM2MTg1OTR8MA&ixlib=rb-4.1.0&q=85')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundAttachment: 'fixed'
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-vetGreen/85 to-vetGreen/70 z-10" />
+        <div className="container mx-auto px-4 h-full flex items-center justify-center relative z-20">
+          <div className="max-w-4xl text-center">
+            <p className="text-2xl md:text-4xl text-white font-bold leading-relaxed">
+              {t.cattleBannerCaption}
+            </p>
           </div>
         </div>
       </section>
@@ -549,13 +555,13 @@ export default function Home() {
       </section>
 
       {/* Pricing Section */}
-      <section id="pricing" className="py-16 md:py-24 bg-gradient-to-br from-vetGreen to-vetGreen/90">
+      <section id="pricing" className="py-16 md:py-24 bg-[#2D6A4F]">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
               {t.pricingHeading}
             </h2>
-            <p className="text-xl text-white/95 mb-8 leading-relaxed">
+            <p className="text-xl text-white/90 mb-8 leading-relaxed">
               {t.pricingText}
             </p>
             <Button 
