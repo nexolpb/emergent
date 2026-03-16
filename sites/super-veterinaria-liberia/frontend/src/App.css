@@ -1,0 +1,14 @@
+/* Custom variables for Super Veterinaria Liberia */
+:root {
+  --vet-green: #2D6A4F;
+  --warm-amber: #F4A261;
+  --warm-white: #FAFAF7;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-padding-top: 80px;
+}
