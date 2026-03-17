@@ -35,7 +35,7 @@ const translations = {
     brandSub: 'Regeneravet',
     
     // Hero
-    heroHeadline: 'Más de 6 años cuidando a sus mascotas en Tamarindo',
+    heroHeadline: 'Más de 6 años cuidando a tus mascotas en Tamarindo',
     heroSubheadline: 'Medicina veterinaria convencional e integrativa. Cirugía, ozonoterapia, terapias regenerativas y tienda de mascotas.',
     trustBullet1: '4.0★ en Google',
     trustBullet2: '6+ años en Tamarindo',
