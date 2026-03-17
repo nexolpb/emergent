@@ -21,6 +21,13 @@ import {
   X
 } from 'lucide-react';
 
+// Business-provided images (downloaded from their Facebook)
+import carvajalHero from '../assets/carvajal/606027328_1338366661426021_2045651570833176384_n.jpg';
+import carvajal1 from '../assets/carvajal/491036402_1134806961781993_5735464978000035785_n.jpg';
+import carvajal2 from '../assets/carvajal/573526381_1290984489497572_9182209460437279941_n.jpg';
+import carvajal3 from '../assets/carvajal/646785470_1390029279593092_7222153861339754932_n.jpg';
+import carvajal4 from '../assets/carvajal/468813737_10161258486762756_6650481723577584901_n.jpg';
+
 const translations = {
   es: {
     // Header
@@ -155,34 +162,16 @@ const translations = {
 };
 
 // NEXO SITES SALES WHATSAPP - PRIMARY CTA
-const SALES_WHATSAPP = 'https://wa.me/50689939071?text=Hola%2C%20vi%20la%20vista%20previa%20del%20sitio%20para%20Cl%C3%ADnica%20Veterinaria%20Dra.%20Carvajal%20(Villarreal%2C%20Tamarindo).%20%C2%BFMe%20la%20puede%20compartir%20y%20decirme%20el%20precio%20para%20publicarla%3F';
+// Use language-matched prefilled messages.
+const SALES_WHATSAPP_ES = 'https://wa.me/50689939071?text=Hola%2C%20vi%20la%20vista%20previa%20del%20sitio%20para%20Cl%C3%ADnica%20Veterinaria%20Dra.%20Carvajal%20(Villarreal%2C%20Tamarindo).%20%C2%BFMe%20la%20puede%20compartir%20y%20decirme%20el%20precio%20para%20publicarla%3F';
+const SALES_WHATSAPP_EN = 'https://wa.me/50689939071?text=Hi%2C%20I%20saw%20the%20website%20preview%20for%20Dr.%20Carvajal%20Veterinary%20Clinic%20(Villarreal%2C%20Tamarindo).%20Could%20you%20share%20it%20with%20me%20and%20tell%20me%20the%20price%20to%20publish%20it%3F';
 
-// Gallery images
+// Gallery images (business-provided)
 const galleryImages = [
-  {
-    url: 'https://images.unsplash.com/photo-1770836037793-95bdbf190f71?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzB8MHwxfHNlYXJjaHwxfHx2ZXRlcmluYXJpYW4lMjBleGFtaW5pbmclMjBwZXQlMjBkb2clMjBjbGluaWN8ZW58MHx8fHwxNzczNzc0ODM4fDA&ixlib=rb-4.1.0&q=85',
-    alt: { es: 'Veterinaria examinando mascota', en: 'Veterinarian examining pet' }
-  },
-  {
-    url: 'https://images.unsplash.com/photo-1674224624366-b8c6cf5ac3d2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NjV8MHwxfHNlYXJjaHwyfHxnb2xkZW4lMjByZXRyaWV2ZXIlMjBoYXBweSUyMGRvZyUyMHBvcnRyYWl0fGVufDB8fHx8MTc3Mzc3NDgzNnww&ixlib=rb-4.1.0&q=85',
-    alt: { es: 'Perro feliz', en: 'Happy dog' }
-  },
-  {
-    url: 'https://images.unsplash.com/photo-1760277554649-4dc8d92b04c2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MjJ8MHwxfHNlYXJjaHwzfHxjYXQlMjBwZXQlMjBwb3J0cmFpdCUyMGN1dGUlMjBraXR0ZW58ZW58MHx8fHwxNzczNzc0ODM3fDA&ixlib=rb-4.1.0&q=85',
-    alt: { es: 'Gatito curioso', en: 'Curious kitten' }
-  },
-  {
-    url: 'https://images.unsplash.com/photo-1770836037289-e00e5f351d11?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzB8MHwxfHNlYXJjaHwyfHx2ZXRlcmluYXJpYW4lMjBleGFtaW5pbmclMjBwZXQlMjBkb2clMjBjbGluaWN8ZW58MHx8fHwxNzczNzc0ODM4fDA&ixlib=rb-4.1.0&q=85',
-    alt: { es: 'Consulta veterinaria', en: 'Veterinary consultation' }
-  },
-  {
-    url: 'https://images.unsplash.com/photo-1623387641168-d9803ddd3f35?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzV8MHwxfHNlYXJjaHwyfHx2ZXRlcmluYXJ5JTIwY2xpbmljJTIwZG9nJTIwY2F0JTIwZnJpZW5kbHklMjBwZXQlMjBjYXJlfGVufDB8fHx8MTc3Mzc3NDgzNXww&ixlib=rb-4.1.0&q=85',
-    alt: { es: 'Perro y gato juntos', en: 'Dog and cat together' }
-  },
-  {
-    url: 'https://images.unsplash.com/photo-1609348490161-a879e4327ae9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NjV8MHwxfHNlYXJjaHwxfHxnb2xkZW4lMjByZXRyaWV2ZXIlMjBoYXBweSUyMGRvZyUyMHBvcnRyYWl0fGVufDB8fHx8MTc3Mzc3NDgzNnww&ixlib=rb-4.1.0&q=85',
-    alt: { es: 'Mascota feliz al aire libre', en: 'Happy pet outdoors' }
-  }
+  { url: carvajal1, alt: { es: 'Clínica Veterinaria Dra. Carvajal', en: 'Dr. Carvajal Veterinary Clinic' } },
+  { url: carvajal2, alt: { es: 'Regeneravet', en: 'Regeneravet' } },
+  { url: carvajal3, alt: { es: 'Atención veterinaria en Villarreal', en: 'Veterinary care in Villarreal' } },
+  { url: carvajal4, alt: { es: 'Equipo y pacientes', en: 'Team and patients' } }
 ];
 
 export default function Home() {
@@ -190,6 +179,7 @@ export default function Home() {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
   const t = translations[lang];
+  const SALES_WHATSAPP = lang === 'en' ? SALES_WHATSAPP_EN : SALES_WHATSAPP_ES;
 
   useEffect(() => {
     const savedLang = localStorage.getItem('lang');
@@ -272,7 +262,7 @@ export default function Home() {
         <div 
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: `linear-gradient(135deg, rgba(5, 102, 75, 0.9), rgba(5, 102, 75, 0.75)), url('https://images.unsplash.com/photo-1623387641168-d9803ddd3f35?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzV8MHwxfHNlYXJjaHwyfHx2ZXRlcmluYXJ5JTIwY2xpbmljJTIwZG9nJTIwY2F0JTIwZnJpZW5kbHklMjBwZXQlMjBjYXJlfGVufDB8fHx8MTc3Mzc3NDgzNXww&ixlib=rb-4.1.0&q=85')`,
+            backgroundImage: `linear-gradient(135deg, rgba(5, 102, 75, 0.9), rgba(5, 102, 75, 0.75)), url('${carvajalHero}')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center'
           }}
