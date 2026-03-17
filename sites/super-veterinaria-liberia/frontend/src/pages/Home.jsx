@@ -78,7 +78,7 @@ const translations = {
     social: 'Redes sociales',
     
     // Pricing
-    pricingHeading: 'Sitios web que convierten — desde $349',
+    pricingHeading: 'Sitios web que generan clientes — desde $349',
     pricingText: 'Esta es una vista previa profesional de Nexo Sites. Ofrecemos diseño web personalizado, revisiones ilimitadas y publicación completa para tu negocio.',
     pricingCta: 'Solicitar información',
     
@@ -143,7 +143,7 @@ const translations = {
     social: 'Social media',
     
     // Pricing
-    pricingHeading: 'Websites that convert — starting at $349',
+    pricingHeading: 'Websites that bring customers — starting at $349',
     pricingText: 'This is a professional preview by Nexo Sites. We offer custom web design, unlimited revisions, and full publishing for your business.',
     pricingCta: 'Request information',
     

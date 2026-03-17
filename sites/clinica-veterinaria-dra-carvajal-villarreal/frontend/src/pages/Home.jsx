@@ -26,7 +26,6 @@ import carvajalHero from '../assets/carvajal/606027328_1338366661426021_20456515
 import carvajal1 from '../assets/carvajal/491036402_1134806961781993_5735464978000035785_n.jpg';
 import carvajal2 from '../assets/carvajal/573526381_1290984489497572_9182209460437279941_n.jpg';
 import carvajal3 from '../assets/carvajal/646785470_1390029279593092_7222153861339754932_n.jpg';
-import carvajal4 from '../assets/carvajal/468813737_10161258486762756_6650481723577584901_n.jpg';
 
 const translations = {
   es: {
@@ -85,7 +84,7 @@ const translations = {
     social: 'Redes sociales',
     
     // Pricing
-    pricingHeading: 'Sitios web que convierten — desde $349',
+    pricingHeading: 'Sitios web que generan clientes — desde $349',
     pricingText: 'Esta es una vista previa profesional de Nexo Sites. Ofrecemos diseño web personalizado, revisiones ilimitadas y publicación completa para tu negocio.',
     pricingCta: 'Solicitar información',
     
@@ -150,7 +149,7 @@ const translations = {
     social: 'Social media',
     
     // Pricing
-    pricingHeading: 'Websites that convert — starting at $349',
+    pricingHeading: 'Websites that bring customers — starting at $349',
     pricingText: 'This is a professional preview by Nexo Sites. We offer custom web design, unlimited revisions, and full publishing for your business.',
     pricingCta: 'Request information',
     
@@ -170,8 +169,7 @@ const SALES_WHATSAPP_EN = 'https://wa.me/50689939071?text=Hi%2C%20I%20saw%20the%
 const galleryImages = [
   { url: carvajal1, alt: { es: 'Clínica Veterinaria Dra. Carvajal', en: 'Dr. Carvajal Veterinary Clinic' } },
   { url: carvajal2, alt: { es: 'Regeneravet', en: 'Regeneravet' } },
-  { url: carvajal3, alt: { es: 'Atención veterinaria en Villarreal', en: 'Veterinary care in Villarreal' } },
-  { url: carvajal4, alt: { es: 'Equipo y pacientes', en: 'Team and patients' } }
+  { url: carvajal3, alt: { es: 'Atención veterinaria en Villarreal', en: 'Veterinary care in Villarreal' } }
 ];
 
 export default function Home() {
