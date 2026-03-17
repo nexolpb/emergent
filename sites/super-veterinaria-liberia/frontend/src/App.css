@@ -1,8 +1,7 @@
-/* Clínica Veterinaria Dra. Carvajal - Custom CSS */
+/* Custom variables for Super Veterinaria Liberia */
 :root {
-  --emerald: #05664B;
-  --emerald-dark: #03472F;
-  --amber: #F5A623;
+  --vet-green: #2D6A4F;
+  --warm-amber: #F4A261;
   --warm-white: #FAFAF7;
 }
 
