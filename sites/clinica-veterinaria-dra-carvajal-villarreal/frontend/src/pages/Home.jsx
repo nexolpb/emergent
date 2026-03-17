@@ -37,7 +37,7 @@ const translations = {
     // Hero
     heroHeadline: 'Más de 6 años cuidando a tus mascotas en Tamarindo',
     heroSubheadline: 'Medicina veterinaria convencional e integrativa. Cirugía, ozonoterapia, terapias regenerativas y tienda de mascotas.',
-    trustBullet1: '4.0★ en Google',
+    trustBullet1: '4.2★ en Google',
     trustBullet2: '6+ años en Tamarindo',
     trustBullet3: 'Especialistas en medicina regenerativa',
     ctaPrimary: 'Solicitar información del sitio',
@@ -63,7 +63,7 @@ const translations = {
     trustHeading: 'Confianza y experiencia en Tamarindo',
     trustNarrative: 'Clínica Veterinaria Dra. Carvajal lleva más de 6 años brindando atención integral a mascotas en Villarreal y Tamarindo. Bajo la marca Regeneravet, ofrecemos tratamientos innovadores como ozonoterapia, terapia con implantes de oro y medicina biorreguladora. La Dra. Carvajal se especializa en animales de compañía, fauna silvestre y animales marinos, manteniéndose actualizada mediante congresos veterinarios en México.',
     trustBadge1: '6+ años de experiencia',
-    trustBadge2: '4.0★ en Google',
+    trustBadge2: '4.2★ en Google',
     trustBadge3: '100% recomendado en Facebook',
     trustBadge4: 'Educación continua internacional',
     trustBadge5: 'Especialista en fauna silvestre y marina',
@@ -102,7 +102,7 @@ const translations = {
     // Hero
     heroHeadline: 'Over 6 years caring for your pets in Tamarindo',
     heroSubheadline: 'Conventional and integrative veterinary medicine. Surgery, ozone therapy, regenerative treatments, and pet shop.',
-    trustBullet1: '4.0★ on Google',
+    trustBullet1: '4.2★ on Google',
     trustBullet2: '6+ years in Tamarindo',
     trustBullet3: 'Regenerative medicine specialists',
     ctaPrimary: 'Request site information',
@@ -128,7 +128,7 @@ const translations = {
     trustHeading: 'Trust and experience in Tamarindo',
     trustNarrative: 'Clínica Veterinaria Dra. Carvajal has been providing comprehensive pet care in Villarreal and Tamarindo for over 6 years. Under the Regeneravet brand, we offer innovative treatments like ozone therapy, gold implant therapy, and bioregulatory medicine. Dr. Carvajal specializes in companion animals, wildlife, and marine animals, staying current through veterinary congresses in Mexico.',
     trustBadge1: '6+ years of experience',
-    trustBadge2: '4.0★ on Google',
+    trustBadge2: '4.2★ on Google',
     trustBadge3: '100% recommended on Facebook',
     trustBadge4: 'Continuing international education',
     trustBadge5: 'Wildlife and marine animal specialist',
@@ -473,7 +473,7 @@ export default function Home() {
               <div className="flex flex-wrap gap-4">
                 <div className="flex items-center gap-2 bg-white px-5 py-3 rounded-xl shadow-md">
                   <Star className="w-6 h-6 text-amber fill-amber" />
-                  <span className="font-bold text-emeraldDark">4.0/5</span>
+                  <span className="font-bold text-emeraldDark">4.2/5</span>
                   <span className="text-gray-600 text-sm">Google</span>
                 </div>
                 <div className="flex items-center gap-2 bg-white px-5 py-3 rounded-xl shadow-md">
