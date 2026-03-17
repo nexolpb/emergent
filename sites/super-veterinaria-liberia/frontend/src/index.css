@@ -114,6 +114,15 @@ code {
     }
 }
 
+/* Parallax cattle banner (desktop only; mobile uses scroll for performance) */
+.cattle-banner-bg {
+  background-attachment: scroll;
+}
+@media (min-width: 768px) {
+  .cattle-banner-bg {
+    background-attachment: fixed;
+  }
+}
 
 /* Custom colors for Super Veterinaria Liberia */
 @layer utilities {

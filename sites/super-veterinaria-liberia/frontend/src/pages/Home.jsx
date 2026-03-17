@@ -55,7 +55,7 @@ const translations = {
     
     // Trust
     trustHeading: 'Más de 30 años de confianza en Liberia',
-    trustNarrative: 'Super Veterinaria Liberia es parte de la vida de muchas familias en Guanacaste. Con más de 30 años de trayectoria en Liberia, combinamos atención veterinaria cercana y profesional con una tienda completa para que encontrés soluciones en un solo lugar. Atendemos mascotas y también animales de granja, además de ofrecer farmacia veterinaria, pet shop, acuario e insumos agropecuarios. Aquí te ayudamos a cuidar lo que más querés—con experiencia, honestidad y trato humano.',
+    trustNarrative: 'Super Veterinaria Liberia es parte de la vida de muchas familias en Guanacaste. Con más de 30 años de trayectoria en Liberia, combinamos atención veterinaria cercana y profesional con una tienda completa para que encuentres soluciones en un solo lugar. Atendemos mascotas y también animales de granja, además de ofrecer farmacia veterinaria, pet shop, acuario e insumos agropecuarios. Aquí te ayudamos a cuidar lo que más quieres con experiencia, honestidad y trato humano.',
     trustBadge1: '30+ años de experiencia',
     trustBadge2: '4.3⭐ en Google (324 reseñas)',
     trustBadge3: 'Atención bilingüe ES/EN',
@@ -76,7 +76,7 @@ const translations = {
     
     // Contact
     contactHeading: 'Contacto',
-    contactIntro: 'Visitános en Liberia o escribinos para consultas, productos veterinarios y apoyo agropecuario.',
+    contactIntro: 'Visítanos en Liberia o escríbenos para consultas, productos veterinarios y apoyo agropecuario.',
     phone: 'Teléfono',
     whatsappBusiness: 'WhatsApp (negocios)',
     whatsappPets: 'WhatsApp (mascotas)',
@@ -90,7 +90,7 @@ const translations = {
     
     // Footer
     footerTagline: 'Más de 30 años brindándote lo mejor',
-    footerRights: '© 2025 Super Veterinaria Liberia S.A. Todos los derechos reservados.',
+    footerRights: '© 2026 Super Veterinaria Liberia S.A. Todos los derechos reservados.',
     footerPreview: 'Vista previa creada por Nexo Sites'
   },
   en: {
@@ -166,7 +166,7 @@ const translations = {
     
     // Footer
     footerTagline: 'Over 30 years giving you the best',
-    footerRights: '© 2025 Super Veterinaria Liberia S.A. All rights reserved.',
+    footerRights: '© 2026 Super Veterinaria Liberia S.A. All rights reserved.',
     footerPreview: 'Preview created by Nexo Sites'
   }
 };
@@ -292,6 +292,27 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Cattle Banner - Guanacaste Culture */}
+      <section className="relative h-72 md:h-96 overflow-hidden">
+        <div 
+          className="absolute inset-0 z-0 cattle-banner-bg"
+          style={{
+            backgroundImage: `url('https://images.unsplash.com/photo-1577756113290-7f03c7dc2fb3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwyfHxjYXR0bGUlMjBjb3clMjBwYXN0dXJlJTIwdHJvcGljYWwlMjBncmVlbnxlbnwwfHx8fDE3NzM2MTg1OTR8MA&ixlib=rb-4.1.0&q=85')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center 70%',
+            backgroundColor: '#2D6A4F'
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-vetGreen/85 to-vetGreen/70 z-10" />
+        <div className="container mx-auto px-4 h-full flex items-center justify-center relative z-20">
+          <div className="max-w-4xl text-center">
+            <p className="text-2xl md:text-4xl text-white font-bold leading-relaxed">
+              {t.cattleBannerCaption}
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section className="py-16 md:py-24 bg-warmWhite">
         <div className="container mx-auto px-4">
@@ -355,26 +376,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Cattle Banner - Guanacaste Culture */}
-      <section className="relative h-72 md:h-96 overflow-hidden">
-        <div 
-          className="absolute inset-0 z-0"
-          style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1577756113290-7f03c7dc2fb3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwyfHxjYXR0bGUlMjBjb3clMjBwYXN0dXJlJTIwdHJvcGljYWwlMjBncmVlbnxlbnwwfHx8fDE3NzM2MTg1OTR8MA&ixlib=rb-4.1.0&q=85')`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundAttachment: 'fixed'
-          }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-vetGreen/85 to-vetGreen/70 z-10" />
-        <div className="container mx-auto px-4 h-full flex items-center justify-center relative z-20">
-          <div className="max-w-4xl text-center">
-            <p className="text-2xl md:text-4xl text-white font-bold leading-relaxed">
-              {t.cattleBannerCaption}
-            </p>
-          </div>
-        </div>
-      </section>
 
       {/* Trust / About Section */}
       <section className="py-16 md:py-24 bg-white">
