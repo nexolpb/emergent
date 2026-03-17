@@ -72,7 +72,7 @@ const translations = {
     locationHeading: '¿Dónde estamos?',
     address: 'De Farmacia Fischel Villarreal 100–200 mtrs Norte, carretera hacia Huacas, Villarreal 50310, Guanacaste',
     hoursTitle: 'Horario de atención',
-    hoursNote: 'Consulte disponibilidad',
+    hoursNote: 'Lun–Vie: 8:00 AM–6:00 PM · Sáb: 8:00 AM–5:00 PM · Dom: 9:00 AM–3:00 PM',
     directionsHelper: 'Cómo llegar',
     
     // Contact
@@ -136,8 +136,8 @@ const translations = {
     // Location
     locationHeading: 'Find us',
     address: '100–200 meters north of Farmacia Fischel Villarreal, road to Huacas, Villarreal 50310, Guanacaste',
-    hoursTitle: 'Business Hours',
-    hoursNote: 'Check availability',
+    hoursTitle: 'Business hours',
+    hoursNote: 'Mon–Fri: 8:00 AM–6:00 PM · Sat: 8:00 AM–5:00 PM · Sun: 9:00 AM–3:00 PM',
     directionsHelper: 'Get directions',
     
     // Contact
@@ -553,7 +553,7 @@ export default function Home() {
                 data-testid="directions-btn"
               >
                 <a 
-                  href="https://www.google.com/maps/search/?api=1&query=Regeneravet+Dra+Karla+Carvajal+Villarreal+Costa+Rica" 
+                  href="https://www.google.com/maps/search/?api=1&query=Regeneravet%20Dra%20Karla%20Carvajal%2C%20Villarreal%2C%20Guanacaste%2C%20Costa%20Rica" 
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
