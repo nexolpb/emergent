@@ -62,8 +62,8 @@ const features = [
 
 // Hero Section
 const HeroSection = () => (
-  <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-white via-sage-50 to-white" data-testid="hero-section">
-    <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIiB4PSIwIiB5PSIwIj48ZmVUdXJidWxlbmNlIGJhc2VGcmVxdWVuY3k9Ii43NSIgc3RpdGNoVGlsZXM9InN0aXRjaCIgdHlwZT0iZnJhY3RhbE5vaXNlIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCIvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbHRlcj0idXJsKCNhKSIgb3BhY2l0eT0iLjAzIi8+PC9zdmc+')] opacity-50"></div>
+  <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-forest/10 via-sage-50 to-white" data-testid="hero-section">
+    <div className="absolute inset-0 bg-forest/5 opacity-50"></div>
     
     <div className="container-custom relative z-10">
       <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
@@ -184,6 +184,61 @@ const ServicesSection = () => (
             </CardContent>
           </Card>
         ))}
+      </div>
+    </div>
+  </section>
+);
+
+// About / Trust Section
+const AboutTrustSection = () => (
+  <section className="section-padding bg-white" data-testid="about-trust-section">
+    <div className="container-custom">
+      <div className="grid lg:grid-cols-2 gap-10 items-start">
+        <div className="animate-fade-up">
+          <h2 className="font-heading text-3xl md:text-4xl font-semibold text-slate-900 mb-4">
+            Confianza respaldada por la comunidad
+          </h2>
+          <p className="text-lg text-slate-600 leading-relaxed mb-6">
+            En Clínica Veterinaria Machado cuidamos perros y gatos en San Pablo, Heredia, con un enfoque profesional y humano.
+            Con <span className="font-semibold text-slate-900">18 años de experiencia</span> y la dirección del
+            <span className="font-semibold text-slate-900"> Dr. Anderson Machado Casas</span>, trabajamos para que cada visita sea clara, rápida y confiable.
+          </p>
+          <p className="text-slate-600 leading-relaxed">
+            Esta página es una <span className="font-semibold text-slate-900">vista previa</span> creada por Nexo Sites para mostrar cómo se vería un sitio web moderno,
+            fácil de usar y diseñado para convertir visitas de Google en mensajes.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 animate-fade-up animation-delay-100">
+          <div className="bg-sage/30 rounded-2xl p-6 border border-sage/40">
+            <div className="flex items-center gap-3 mb-2">
+              <Star className="w-5 h-5 text-amber-500 fill-amber-500" />
+              <p className="font-semibold text-slate-900">4.3/5 en Google</p>
+            </div>
+            <p className="text-slate-600 text-sm">307 reseñas verificadas</p>
+          </div>
+          <div className="bg-sage/30 rounded-2xl p-6 border border-sage/40">
+            <div className="flex items-center gap-3 mb-2">
+              <ShieldCheck className="w-5 h-5 text-forest" />
+              <p className="font-semibold text-slate-900">18 años</p>
+            </div>
+            <p className="text-slate-600 text-sm">de experiencia</p>
+          </div>
+          <div className="bg-sage/30 rounded-2xl p-6 border border-sage/40">
+            <div className="flex items-center gap-3 mb-2">
+              <Users className="w-5 h-5 text-forest" />
+              <p className="font-semibold text-slate-900">Dr. Anderson Machado</p>
+            </div>
+            <p className="text-slate-600 text-sm">veterinario responsable</p>
+          </div>
+          <div className="bg-sage/30 rounded-2xl p-6 border border-sage/40">
+            <div className="flex items-center gap-3 mb-2">
+              <MapPin className="w-5 h-5 text-forest" />
+              <p className="font-semibold text-slate-900">San Pablo</p>
+            </div>
+            <p className="text-slate-600 text-sm">150 m de la UNA</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -336,7 +391,7 @@ const ContactSection = () => (
 const PricingSection = () => (
   <section id="pricing" className="section-padding bg-night-watch relative overflow-hidden" data-testid="pricing-section">
     {/* Decorative elements */}
-    <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIiB4PSIwIiB5PSIwIj48ZmVUdXJidWxlbmNlIGJhc2VGcmVxdWVuY3k9Ii43NSIgc3RpdGNoVGlsZXM9InN0aXRjaCIgdHlwZT0iZnJhY3RhbE5vaXNlIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCIvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbHRlcj0idXJsKCNhKSIgb3BhY2l0eT0iLjA1Ii8+PC9zdmc=')] opacity-30"></div>
+    <div className="absolute inset-0 bg-forest/5 opacity-30"></div>
     <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-whatsapp/5 rounded-full blur-3xl"></div>
     
     <div className="container-custom relative z-10">
@@ -415,6 +470,7 @@ function App() {
     <div className="App font-body antialiased">
       <HeroSection />
       <ServicesSection />
+      <AboutTrustSection />
       <WhyChooseSection />
       <LocationSection />
       <ContactSection />
