@@ -25,6 +25,13 @@ import { Separator } from "@/components/ui/separator";
 
 const WHATSAPP_CTA_URL = "https://wa.me/50689939071?text=Hola%2C+vi+la+vista+previa+del+sitio+para+Cl%C3%ADnica+Veterinaria+Machado+(Heredia).+%C2%BFMe+la+puede+compartir+y+decirme+el+precio+para+publicarla%3F";
 
+// High-end image set (consistent, bright, modern clinic look)
+const IMG_HERO = "https://source.unsplash.com/kx9EsPoA8hg/1600x1000"; // vet + small dog, bright clinic
+const IMG_TRUST = "https://source.unsplash.com/-1MVEvxmQgU/1400x900"; // vet + owner + pet in clinic
+const IMG_EXP_1 = "https://source.unsplash.com/jN_c7dpU62Q/1200x800"; // exam in vet clinic
+const IMG_EXP_2 = "https://source.unsplash.com/Vu06wWkquJs/1200x800"; // ultrasound / equipment
+const IMG_EXP_3 = "https://source.unsplash.com/odC0X_IuvU4/1200x800"; // happy dog + vet visit
+
 const services = [
   { icon: Stethoscope, title: "Consulta general", desc: "Atención integral para perros y gatos" },
   { icon: Scan, title: "Radiología digital", desc: "Diagnósticos precisos con tecnología moderna" },
@@ -80,7 +87,8 @@ const HeroSection = () => (
           </h1>
           
           <p className="text-lg md:text-xl text-slate-600 leading-relaxed max-w-xl">
-            18 años cuidando a perros y gatos con atención profesional, cálida y equipos modernos.
+            <span className="font-semibold text-slate-900">Más de 18 años atendiendo perros y gatos en San Pablo</span>,
+            con atención profesional, cálida y una clínica moderna que inspira confianza desde el primer momento.
           </p>
           
           {/* Trust Bullets */}
@@ -109,6 +117,7 @@ const HeroSection = () => (
               <a href={WHATSAPP_CTA_URL} target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="w-5 h-5 mr-2" />
                 Escríbanos por WhatsApp
+                <span className="ml-3 text-xs font-semibold bg-white/15 px-3 py-1 rounded-full">Le respondemos en minutos</span>
               </a>
             </Button>
             <Button 
@@ -126,11 +135,11 @@ const HeroSection = () => (
         {/* Right Image */}
         <div className="relative animate-fade-up animation-delay-200">
           <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-            <div className="absolute inset-0 bg-gradient-to-t from-forest/20 to-transparent z-10"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-forest/35 via-forest/10 to-transparent z-10"></div>
             <img 
-              src="https://images.unsplash.com/photo-1682448169828-039868860001?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzF8MHwxfHNlYXJjaHw0fHxjYXQlMjBhbmQlMjBkb2clMjB0b2dldGhlcnxlbnwwfHx8fDE3NzM4MDQ4MDF8MA&ixlib=rb-4.1.0&q=85&w=800"
-              alt="Perro y gato descansando juntos en Clínica Veterinaria Machado"
-              className="w-full h-[400px] lg:h-[500px] object-cover"
+              src={IMG_HERO}
+              alt="Veterinaria atendiendo a un perro en un ambiente clínico moderno"
+              className="w-full h-[400px] lg:h-[520px] object-cover"
               data-testid="hero-image"
             />
           </div>
@@ -144,6 +153,57 @@ const HeroSection = () => (
               <p className="font-semibold text-slate-900">18 años</p>
               <p className="text-sm text-slate-500">de experiencia</p>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+);
+
+// Services Section
+const ExperienceSection = () => (
+  <section className="section-padding bg-sage/30" data-testid="experience-section">
+    <div className="container-custom">
+      <div className="text-center mb-16 animate-fade-up">
+        <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-semibold text-slate-900 mb-4">
+          Así es la experiencia en nuestra clínica
+        </h2>
+        <p className="text-lg text-slate-600 max-w-3xl mx-auto">
+          Un proceso claro y humano, en un ambiente limpio y moderno — para que usted y su mascota se sientan en buenas manos.
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 animate-fade-up" data-testid="experience-step-1">
+          <div className="relative h-52">
+            <div className="absolute inset-0 bg-gradient-to-t from-forest/25 to-transparent z-10"></div>
+            <img src={IMG_EXP_1} alt="Revisión veterinaria" className="w-full h-full object-cover" loading="lazy" />
+          </div>
+          <div className="p-7">
+            <h3 className="font-heading text-xl font-semibold text-slate-900 mb-2">1) Revisión y diagnóstico</h3>
+            <p className="text-slate-600 leading-relaxed">Evaluamos a su mascota con atención cuidadosa para entender lo que necesita desde el inicio.</p>
+          </div>
+        </div>
+
+        <div className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 animate-fade-up animation-delay-100" data-testid="experience-step-2">
+          <div className="relative h-52">
+            <div className="absolute inset-0 bg-gradient-to-t from-forest/25 to-transparent z-10"></div>
+            <img src={IMG_EXP_2} alt="Equipo moderno" className="w-full h-full object-cover" loading="lazy" />
+          </div>
+          <div className="p-7">
+            <h3 className="font-heading text-xl font-semibold text-slate-900 mb-2">2) Apoyo con equipo moderno</h3>
+            <p className="text-slate-600 leading-relaxed">Usamos herramientas clínicas para apoyar decisiones rápidas y seguras, según el caso.</p>
+          </div>
+        </div>
+
+        <div className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 animate-fade-up animation-delay-200" data-testid="experience-step-3">
+          <div className="relative h-52">
+            <div className="absolute inset-0 bg-gradient-to-t from-forest/25 to-transparent z-10"></div>
+            <img src={IMG_EXP_3} alt="Mascota tranquila" className="w-full h-full object-cover" loading="lazy" />
+          </div>
+          <div className="p-7">
+            <h3 className="font-heading text-xl font-semibold text-slate-900 mb-2">3) Seguimiento y tranquilidad</h3>
+            <p className="text-slate-600 leading-relaxed">Le explicamos el plan con claridad y dejamos a su mascota cómoda durante todo el proceso.</p>
           </div>
         </div>
       </div>
@@ -193,50 +253,48 @@ const ServicesSection = () => (
 const AboutTrustSection = () => (
   <section className="section-padding bg-white" data-testid="about-trust-section">
     <div className="container-custom">
-      <div className="grid lg:grid-cols-2 gap-10 items-start">
-        <div className="animate-fade-up">
+      <div className="grid lg:grid-cols-2 gap-12 items-center">
+        {/* Image */}
+        <div className="relative rounded-3xl overflow-hidden shadow-2xl animate-fade-up">
+          <div className="absolute inset-0 bg-gradient-to-t from-forest/25 to-transparent z-10"></div>
+          <img
+            src={IMG_TRUST}
+            alt="Veterinario atendiendo una mascota en clínica moderna"
+            className="w-full h-[420px] object-cover"
+            loading="lazy"
+          />
+        </div>
+
+        {/* Copy + Stats */}
+        <div className="animate-fade-up animation-delay-100">
           <h2 className="font-heading text-3xl md:text-4xl font-semibold text-slate-900 mb-4">
             Confianza respaldada por la comunidad
           </h2>
-          <p className="text-lg text-slate-600 leading-relaxed mb-6">
-            En Clínica Veterinaria Machado cuidamos perros y gatos en San Pablo, Heredia, con un enfoque profesional y humano.
-            Con <span className="font-semibold text-slate-900">18 años de experiencia</span> y la dirección del
-            <span className="font-semibold text-slate-900"> Dr. Anderson Machado Casas</span>, trabajamos para que cada visita sea clara, rápida y confiable.
-          </p>
-          <p className="text-slate-600 leading-relaxed">
-            Esta página es una <span className="font-semibold text-slate-900">vista previa</span> creada por Nexo Sites para mostrar cómo se vería un sitio web moderno,
-            fácil de usar y diseñado para convertir visitas de Google en mensajes.
-          </p>
-        </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 animate-fade-up animation-delay-100">
-          <div className="bg-sage/30 rounded-2xl p-6 border border-sage/40">
-            <div className="flex items-center gap-3 mb-2">
-              <Star className="w-5 h-5 text-amber-500 fill-amber-500" />
-              <p className="font-semibold text-slate-900">4.3/5 en Google</p>
+          <p className="text-lg text-slate-600 leading-relaxed mb-5">
+            En <span className="font-semibold text-slate-900">Clínica Veterinaria Machado</span> cuidamos perros y gatos en San Pablo, Heredia,
+            con un enfoque <span className="font-semibold text-slate-900">profesional</span> y un trato <span className="font-semibold text-slate-900">cálido</span>.
+          </p>
+          <p className="text-lg text-slate-600 leading-relaxed mb-8">
+            Con <span className="font-semibold text-slate-900">18 años de experiencia</span> y la dirección del
+            <span className="font-semibold text-slate-900"> Dr. Anderson Machado Casas</span>, buscamos que cada visita se sienta clara, rápida y confiable.
+          </p>
+
+          <div className="grid grid-cols-2 gap-4">
+            <div className="bg-sage/30 rounded-2xl p-6 border border-sage/40">
+              <div className="flex items-center gap-3 mb-1">
+                <Star className="w-5 h-5 text-amber-500 fill-amber-500" />
+                <p className="font-semibold text-slate-900">4.3/5 en Google</p>
+              </div>
+              <p className="text-slate-600 text-sm">300+ reseñas</p>
             </div>
-            <p className="text-slate-600 text-sm">307 reseñas verificadas</p>
-          </div>
-          <div className="bg-sage/30 rounded-2xl p-6 border border-sage/40">
-            <div className="flex items-center gap-3 mb-2">
-              <ShieldCheck className="w-5 h-5 text-forest" />
-              <p className="font-semibold text-slate-900">18 años</p>
+            <div className="bg-sage/30 rounded-2xl p-6 border border-sage/40">
+              <div className="flex items-center gap-3 mb-1">
+                <MapPin className="w-5 h-5 text-forest" />
+                <p className="font-semibold text-slate-900">Ubicación</p>
+              </div>
+              <p className="text-slate-600 text-sm">A 150 m de la UNA</p>
             </div>
-            <p className="text-slate-600 text-sm">de experiencia</p>
-          </div>
-          <div className="bg-sage/30 rounded-2xl p-6 border border-sage/40">
-            <div className="flex items-center gap-3 mb-2">
-              <Users className="w-5 h-5 text-forest" />
-              <p className="font-semibold text-slate-900">Dr. Anderson Machado</p>
-            </div>
-            <p className="text-slate-600 text-sm">veterinario responsable</p>
-          </div>
-          <div className="bg-sage/30 rounded-2xl p-6 border border-sage/40">
-            <div className="flex items-center gap-3 mb-2">
-              <MapPin className="w-5 h-5 text-forest" />
-              <p className="font-semibold text-slate-900">San Pablo</p>
-            </div>
-            <p className="text-slate-600 text-sm">150 m de la UNA</p>
           </div>
         </div>
       </div>
@@ -469,6 +527,7 @@ function App() {
   return (
     <div className="App font-body antialiased">
       <HeroSection />
+      <ExperienceSection />
       <ServicesSection />
       <AboutTrustSection />
       <WhyChooseSection />
