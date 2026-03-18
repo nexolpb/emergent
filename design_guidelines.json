@@ -1,0 +1,139 @@
+{
+  "design_guidelines": {
+    "project_name": "Clínica Veterinaria Machado - Landing Page Preview",
+    "version": "1.0",
+    "theme_strategy": "Medical Swiss",
+    "core_philosophy": "Trust, Hygiene, Professionalism, Warmth. A balance between clinical precision and pet-friendly approachability.",
+    "typography": {
+      "font_family_heading": "Manrope, sans-serif",
+      "font_family_body": "DM Sans, sans-serif",
+      "scaling": {
+        "h1": "text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1]",
+        "h2": "text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight",
+        "h3": "text-2xl md:text-3xl font-medium",
+        "body": "text-base md:text-lg leading-relaxed text-slate-600"
+      }
+    },
+    "colors": {
+      "palette": {
+        "primary": {
+          "name": "Deep Forest",
+          "value": "#1A4D2E",
+          "usage": "Headings, Strong Borders, Footer Background"
+        },
+        "secondary": {
+          "name": "Soft Sage",
+          "value": "#E8F5E9",
+          "usage": "Section Backgrounds, Card Hover States"
+        },
+        "accent": {
+          "name": "WhatsApp Green",
+          "value": "#25D366",
+          "usage": "Primary CTAs, WhatsApp Buttons"
+        },
+        "neutral": {
+          "name": "Medical White",
+          "value": "#FFFFFF",
+          "usage": "Main Background, Cards"
+        },
+        "text": {
+          "primary": "#0F172A",
+          "secondary": "#64748B"
+        },
+        "dark_section": {
+          "name": "Night Watch",
+          "value": "#022C22",
+          "usage": "Pricing Teaser Section Background"
+        }
+      },
+      "gradients": {
+        "hero_overlay": "linear-gradient(180deg, rgba(255,255,255,0) 0%, #FFFFFF 100%)",
+        "subtle_mesh": "radial-gradient(circle at 50% 50%, #E8F5E9 0%, transparent 50%)"
+      }
+    },
+    "layout": {
+      "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+      "grid_system": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8",
+      "spacing": {
+        "section_padding": "py-20 md:py-32",
+        "element_gap": "gap-6"
+      },
+      "radius": {
+        "default": "rounded-2xl",
+        "button": "rounded-full",
+        "card": "rounded-xl"
+      }
+    },
+    "components": {
+      "buttons": {
+        "primary": "bg-[#25D366] text-white hover:bg-[#128C7E] shadow-lg hover:shadow-xl transition-all duration-300 font-semibold px-8 py-4 rounded-full flex items-center gap-2",
+        "secondary": "bg-white text-slate-900 border border-slate-200 hover:border-slate-400 hover:bg-slate-50 transition-all duration-300 font-medium px-8 py-4 rounded-full",
+        "floating_fab": "fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform duration-300"
+      },
+      "cards": {
+        "service": "group bg-white border border-slate-100 p-8 rounded-2xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative overflow-hidden",
+        "feature": "bg-slate-50 p-8 rounded-2xl border border-transparent hover:border-green-100 transition-colors"
+      },
+      "sections": {
+        "hero": "Asymmetrical layout. Left: Typography + CTAs. Right: Large image masked in 'Arch' or 'Organic' shape.",
+        "services": "Bento Grid style or clean 3-column grid. Icons/Illustrations + Title + Short Desc.",
+        "pricing_teaser": "Dark background (#022C22). White text. High contrast CTA.",
+        "map": "Full width or large rounded container. Google Maps iframe."
+      }
+    },
+    "assets": {
+      "images": {
+        "hero_main": {
+          "url": "https://images.unsplash.com/photo-1682448169828-039868860001?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzF8MHwxfHNlYXJjaHw0fHxjYXQlMjBhbmQlMjBkb2clMjB0b2dldGhlcnxlbnwwfHx8fDE3NzM4MDQ4MDF8MA&ixlib=rb-4.1.0&q=85",
+          "alt": "Perro y gato descansando juntos en Clínica Veterinaria Machado",
+          "description": "Dog and cat laying on the ground together"
+        },
+        "vet_examining": {
+          "url": "https://images.unsplash.com/photo-1770836037289-e00e5f351d11?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODd8MHwxfHNlYXJjaHwyfHx2ZXRlcmluYXJpYW4lMjBleGFtaW5pbmclMjBkb2clMjBhbmQlMjBjYXQlMjBpbiUyMGNsaW5pY3xlbnwwfHx8fDE3NzM4MDQ3ODV8MA&ixlib=rb-4.1.0&q=85",
+          "alt": "Veterinario examinando paciente",
+          "description": "Veterinarian examines a dog on an examination table"
+        },
+        "clinic_interior": {
+          "url": "https://images.unsplash.com/photo-1581982231900-6a1a46b744c9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MjJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBob3NwaXRhbCUyMHdhaXRpbmclMjByb29tfGVufDB8fHx8MTc3MzgwNDgwMnww&ixlib=rb-4.1.0&q=85",
+          "alt": "Sala de espera moderna",
+          "description": "Brown and white padded armchairs in waiting room"
+        }
+      },
+      "icons": {
+        "library": "lucide-react",
+        "preferred_icons": ["Stethoscope", "Syringe", "Heart", "ShieldCheck", "Clock", "MapPin", "Phone", "Mail", "Cat", "Dog"]
+      }
+    },
+    "content_strategy": {
+      "language": "es-CR",
+      "tone": "Professional, Empathetic, Trustworthy. No 'voseo'.",
+      "key_phrases": [
+        "Expertos en el cuidado de su mascota",
+        "Tecnología de punta y calidez humana",
+        "Su mejor amigo en las mejores manos",
+        "Atención de emergencias"
+      ],
+      "contact_info": {
+        "whatsapp_link": "https://wa.me/50689939071",
+        "whatsapp_display": "8993-9071",
+        "location": "San Pablo, Heredia, Costa Rica"
+      }
+    },
+    "accessibility": {
+      "contrast": "Ensure white text on green backgrounds meets AA standards.",
+      "aria_labels": "All icon-only buttons (like the floating WhatsApp) must have aria-labels.",
+      "reduced_motion": "Respect prefers-reduced-motion for animations."
+    },
+    "instructions_to_main_agent": [
+      "Use 'Manrope' for headings and 'DM Sans' for body text. Import them via Google Fonts.",
+      "Implement a 'Sticky WhatsApp Button' that is always visible on mobile.",
+      "The Pricing Teaser section MUST have a dark background (#022C22) with white text to stand out.",
+      "Do NOT use a real backend. This is a static sales preview.",
+      "Use the 'hero_main' image for the top section. You may use a mask or shape to make it look organic.",
+      "For the 'Location' section, embed a Google Map iframe pointing to 'San Pablo, Heredia'.",
+      "Ensure all 'Agendar Cita' or 'Consulta' buttons link to the WhatsApp URL.",
+      "Add a subtle 'noise' texture overlay to the entire body background for a premium paper feel (opacity 0.03).",
+      "Use 'framer-motion' for simple entrance animations (fade up) on the Service cards."
+    ]
+  }
+}
