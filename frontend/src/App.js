@@ -123,16 +123,32 @@ const HeroSection = () => (
           </div>
         </div>
         
-        {/* Right Image */}
+        {/* Right Image - Decorative Hero */}
         <div className="relative animate-fade-up animation-delay-200">
-          <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-            <div className="absolute inset-0 bg-gradient-to-t from-forest/20 to-transparent z-10"></div>
-            <img 
-              src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=800&q=80"
-              alt="Perro y gato descansando juntos en Clínica Veterinaria Machado"
-              className="w-full h-[400px] lg:h-[500px] object-cover"
-              data-testid="hero-image"
-            />
+          <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-[#E8F5E9] via-white to-[#1A4D2E]/10 h-[400px] lg:h-[500px]">
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="text-center space-y-6 p-8">
+                <div className="flex justify-center items-center gap-6">
+                  <div className="w-24 h-24 rounded-full bg-[#1A4D2E]/10 flex items-center justify-center">
+                    <PawPrint className="w-12 h-12 text-[#1A4D2E]" />
+                  </div>
+                  <div className="w-20 h-20 rounded-full bg-[#25D366]/20 flex items-center justify-center animate-pulse">
+                    <Heart className="w-10 h-10 text-[#25D366]" />
+                  </div>
+                  <div className="w-24 h-24 rounded-full bg-[#1A4D2E]/10 flex items-center justify-center">
+                    <Stethoscope className="w-12 h-12 text-[#1A4D2E]" />
+                  </div>
+                </div>
+                <div className="space-y-2">
+                  <p className="text-2xl font-heading font-semibold text-[#1A4D2E]">Perros & Gatos</p>
+                  <p className="text-[#1A4D2E]/60">Atención veterinaria integral</p>
+                </div>
+              </div>
+            </div>
+            {/* Decorative circles */}
+            <div className="absolute top-8 right-8 w-16 h-16 rounded-full bg-[#25D366]/10"></div>
+            <div className="absolute bottom-16 left-8 w-12 h-12 rounded-full bg-[#1A4D2E]/10"></div>
+            <div className="absolute top-1/3 left-4 w-8 h-8 rounded-full bg-[#E8F5E9]"></div>
           </div>
           
           {/* Floating Badge */}
