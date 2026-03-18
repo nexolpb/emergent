@@ -1,34 +1,334 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+/* ========================================
+   Clínica Veterinaria Machado - Landing Page
+   Design System: Medical Swiss
+   ======================================== */
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap');
+
+/* ========================================
+   CSS Custom Properties
+   ======================================== */
+:root {
+  /* Primary Colors */
+  --forest: #1A4D2E;
+  --sage: #E8F5E9;
+  --whatsapp: #25D366;
+  --night-watch: #022C22;
+  
+  /* Neutral Colors */
+  --white: #FFFFFF;
+  --slate-50: #F8FAFC;
+  --slate-100: #F1F5F9;
+  --slate-200: #E2E8F0;
+  --slate-500: #64748B;
+  --slate-600: #475569;
+  --slate-700: #334155;
+  --slate-900: #0F172A;
+  
+  /* Typography */
+  --font-heading: 'Manrope', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+  
+  /* Spacing */
+  --section-padding-y: 5rem;
+  --section-padding-y-lg: 8rem;
+  
+  /* Border Radius */
+  --radius-sm: 0.5rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.5rem;
+  --radius-xl: 2rem;
+  --radius-full: 9999px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+/* ========================================
+   Base Styles
+   ======================================== */
+html {
+  scroll-behavior: smooth;
 }
 
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+body {
+  font-family: var(--font-body);
+  color: var(--slate-700);
+  background-color: var(--white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.App-link {
-    color: #61dafb;
+.font-heading {
+  font-family: var(--font-heading);
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.font-body {
+  font-family: var(--font-body);
+}
+
+/* ========================================
+   Layout
+   ======================================== */
+.container-custom {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container-custom {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-custom {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.section-padding {
+  padding-top: var(--section-padding-y);
+  padding-bottom: var(--section-padding-y);
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding-top: var(--section-padding-y-lg);
+    padding-bottom: var(--section-padding-y-lg);
+  }
+}
+
+/* ========================================
+   Color Utilities
+   ======================================== */
+.bg-forest {
+  background-color: var(--forest);
+}
+
+.bg-sage {
+  background-color: var(--sage);
+}
+
+.bg-whatsapp {
+  background-color: var(--whatsapp);
+}
+
+.bg-night-watch {
+  background-color: var(--night-watch);
+}
+
+.bg-sage-50 {
+  background-color: #F0FDF4;
+}
+
+.text-forest {
+  color: var(--forest);
+}
+
+.text-whatsapp {
+  color: var(--whatsapp);
+}
+
+/* ========================================
+   Button Styles
+   ======================================== */
+.btn-primary {
+  background-color: var(--whatsapp) !important;
+  color: white !important;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(37, 211, 102, 0.3), 0 4px 6px -4px rgba(37, 211, 102, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #128C7E !important;
+  box-shadow: 0 20px 25px -5px rgba(37, 211, 102, 0.4), 0 8px 10px -6px rgba(37, 211, 102, 0.4);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: var(--white);
+  color: var(--slate-900);
+  font-weight: 500;
+  padding: 1rem 2rem;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--slate-200);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  border-color: var(--slate-400);
+  background-color: var(--slate-50);
+}
+
+/* ========================================
+   Animations
+   ======================================== */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes bounceSlow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-bounce-slow {
+  animation: bounceSlow 2s ease-in-out infinite;
+}
+
+.animation-delay-100 {
+  animation-delay: 100ms;
+}
+
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animation-delay-300 {
+  animation-delay: 300ms;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up,
+  .animate-float,
+  .animate-bounce-slow {
+    animation: none;
+  }
+}
+
+/* ========================================
+   Card Hover Effects
+   ======================================== */
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+}
+
+/* ========================================
+   Gradient Backgrounds
+   ======================================== */
+.gradient-hero {
+  background: linear-gradient(135deg, var(--white) 0%, var(--sage) 50%, var(--white) 100%);
+}
+
+/* ========================================
+   Scrollbar Styling
+   ======================================== */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--slate-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--forest);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--night-watch);
+}
+
+/* ========================================
+   Selection Styling
+   ======================================== */
+::selection {
+  background-color: var(--forest);
+  color: var(--white);
+}
+
+/* ========================================
+   Focus States (Accessibility)
+   ======================================== */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--forest);
+  outline-offset: 2px;
+}
+
+/* ========================================
+   Responsive Typography
+   ======================================== */
+h1 {
+  font-family: var(--font-heading);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-family: var(--font-heading);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-family: var(--font-heading);
+  line-height: 1.3;
+}
+
+p {
+  line-height: 1.7;
+}
+
+/* ========================================
+   Map Container
+   ======================================== */
+iframe {
+  border: 0;
+  display: block;
+}
+
+/* ========================================
+   Utility Classes
+   ======================================== */
+.shadow-whatsapp {
+  box-shadow: 0 10px 40px -10px rgba(37, 211, 102, 0.5);
 }
