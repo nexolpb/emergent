@@ -7,6 +7,16 @@ import {
   Facebook, Instagram, Menu, X
 } from 'lucide-react';
 
+// Local Solera images (provided by Lauriano)
+import IMG_HERO from '@/assets/solera/hero.jpg';
+import IMG_TRUST from '@/assets/solera/trust.jpg';
+import G1 from '@/assets/solera/gallery1.jpg';
+import G2 from '@/assets/solera/gallery2.jpg';
+import G4 from '@/assets/solera/gallery4.jpg';
+import G5 from '@/assets/solera/gallery5.jpg';
+import G6 from '@/assets/solera/gallery6.jpg';
+import G7 from '@/assets/solera/gallery7.jpg';
+
 // ===== CONSTANTS =====
 const SALES_WA =
   'https://wa.me/50689939071?text=Hola%2C%20vi%20la%20vista%20previa%20del%20sitio%20para%20Solera%20Animal%20Center.%20%C2%BFMe%20la%20puedes%20compartir%20y%20decirme%20el%20precio%20para%20publicarla%3F';
@@ -26,15 +36,14 @@ const C = {
   greenMuted: '#9bbead',
 };
 
-// IMAGES: replace with real client photos after approval
 const GALLERY_IMAGES = [
-  // IMAGES: replace with real client photos after approval
-  { url: 'https://images.unsplash.com/photo-1548767797-d0e5f4c3c8d3?auto=format&fit=crop&w=1200&q=70', alt: 'Veterinario atendiendo un perro' },
-  { url: 'https://images.unsplash.com/photo-1583511655826-05700d52f4d9?auto=format&fit=crop&w=1200&q=70', alt: 'Perro en consulta veterinaria' },
-  { url: 'https://images.unsplash.com/photo-1596495578065-6e0763fa1178?auto=format&fit=crop&w=1200&q=70', alt: 'Gato en clínica veterinaria' },
-  { url: 'https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=1200&q=70', alt: 'Perro feliz' },
-  { url: 'https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=1200&q=70', alt: 'Mascota en exteriores' },
-  { url: 'https://images.unsplash.com/photo-1581888227599-779811939961?auto=format&fit=crop&w=1200&q=70', alt: 'Equipo veterinario' },
+  // Local gallery images (replaceable later if needed)
+  { url: G1, alt: 'Galería 1' },
+  { url: G2, alt: 'Galería 2' },
+  { url: G4, alt: 'Galería 3' },
+  { url: G5, alt: 'Galería 4' },
+  { url: G6, alt: 'Galería 5' },
+  { url: G7, alt: 'Galería 6' },
 ];
 
 const SERVICE_ICONS = [
@@ -49,9 +58,9 @@ const i18n = {
     nav: { services: 'Servicios', gallery: 'Galería', location: 'Ubicación', contact: 'Contacto', cta: 'Escríbenos por WhatsApp' },
     hero: {
       eyebrow: 'Hospital Veterinario · Liberia, Guanacaste',
-      headline: 'Tu mascota, bien atendida — en Liberia y cuando más lo necesitas',
-      subheadline: 'Hospital veterinario con más de 10 servicios. Emergencias 24/7. Especialistas visitantes. Servicio express.',
-      trustBullets: ['Emergencias 24/7', 'Más de 10 servicios distintos', 'Cardiólogo especialista visitante', 'Servicio express'],
+      headline: 'Porque tu mascota no puede esperar — y tú no deberías tener que preocuparte',
+      subheadline: 'Hospital veterinario 24/7 en Liberia. Cuando se trata de una emergencia, estamos. Cuando es una consulta de rutina, también.',
+      trustBullets: ['Emergencias 24/7 — Liberia, Guanacaste', 'Más de 10 servicios especializados', 'Cardiólogo especialista visitante', 'Servicio express disponible'],
       primaryCta: 'Escríbenos por WhatsApp',
       secondaryCta: 'Ver precios',
     },
@@ -85,9 +94,9 @@ const i18n = {
     gallery: { eyebrow: 'Nuestro espacio', title: 'Galería', subtitle: 'Conoce a los pacientes de nuestra familia' },
     about: {
       eyebrow: 'Confianza respaldada por la comunidad',
-      title: 'Un hospital veterinario para tu tranquilidad',
-      p1: 'En Solera Animal Center cuidamos a perros y gatos en Liberia con atención profesional y un trato cálido.',
-      p2: 'Nuestro enfoque es simple: claridad, rapidez y acompañamiento — especialmente cuando se trata de una urgencia.',
+      title: 'Cada consulta es más que una revisión',
+      p1: 'Es escuchar, observar y cuidar con dedicación.',
+      p2: 'En Solera Animal Center no preguntamos el tamaño del paciente — solo encontramos la manera de ayudarlo. Profesionalismo y corazón, en cada paso. 🐾',
       stats: [
         { label: 'Google', value: '4.7/5 · 237 reseñas' },
         { label: 'Emergencias', value: '24/7' },
@@ -129,9 +138,9 @@ const i18n = {
     nav: { services: 'Services', gallery: 'Gallery', location: 'Location', contact: 'Contact', cta: 'WhatsApp us' },
     hero: {
       eyebrow: 'Veterinary Hospital · Liberia, Guanacaste',
-      headline: 'Expert pet care — in Liberia, whenever you need it',
-      subheadline: 'Veterinary hospital with 10+ services. 24/7 emergency care. Visiting specialists. Express service.',
-      trustBullets: ['24/7 emergency care', '10+ services', 'Visiting cardiologist', 'Express service'],
+      headline: "Because your pet can't wait — and you shouldn't have to worry",
+      subheadline: "24/7 veterinary hospital in Liberia. When it's an emergency, we're here. When it's a routine visit, we're here too.",
+      trustBullets: ['24/7 emergencies — Liberia, Guanacaste', '10+ specialized services', 'Visiting cardiologist', 'Express service available'],
       primaryCta: 'WhatsApp us',
       secondaryCta: 'See pricing',
     },
@@ -165,9 +174,9 @@ const i18n = {
     gallery: { eyebrow: 'Our space', title: 'Gallery', subtitle: 'Meet our furry patients' },
     about: {
       eyebrow: 'Community-backed trust',
-      title: 'A veterinary hospital for your peace of mind',
-      p1: 'At Solera Animal Center, we care for dogs and cats in Liberia with professional, warm attention.',
-      p2: 'Our focus is simple: clear guidance, fast care, and support — especially when it’s urgent.',
+      title: 'Every consultation is more than just a check-up',
+      p1: "It's about listening, observing, and caring with dedication.",
+      p2: "At Solera Animal Center we don't ask about the size of the patient — we just find a way to help. Professionalism and heart, every step of the way. 🐾",
       stats: [
         { label: 'Google', value: '4.7/5 · 237 reviews' },
         { label: 'Emergency', value: '24/7' },
@@ -430,9 +439,10 @@ function HeroSection({ t, scrollTo }) {
           <div className="relative">
             <div className="relative rounded-3xl overflow-hidden" style={{ boxShadow: '0 20px 60px rgba(74,124,89,0.15)', aspectRatio: '4/3' }}>
               <img
-                src="https://images.unsplash.com/photo-1548699897-26df6901ca69?auto=format&fit=crop&w=800&q=80"
-                alt="Veterinarian with puppy"
+                src={IMG_HERO}
+                alt="Solera Animal Center"
                 className="w-full h-full object-cover block"
+                loading="lazy"
               />
             </div>
             {/* Badge */}
@@ -559,7 +569,7 @@ function AboutTrustSection({ t }) {
           {/* Image */}
           <div className="rounded-3xl overflow-hidden" style={{ boxShadow: '0 8px 30px rgba(0,0,0,0.10)' }}>
             <img
-              src="https://images.unsplash.com/photo-1583336663277-620dc1996580?auto=format&fit=crop&w=1400&q=70"
+              src={IMG_TRUST}
               alt={t.about.title}
               className="w-full h-[360px] lg:h-[420px] object-cover block"
               loading="lazy"
