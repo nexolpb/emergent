@@ -28,12 +28,13 @@ const C = {
 
 // IMAGES: replace with real client photos after approval
 const GALLERY_IMAGES = [
-  { url: 'https://images.unsplash.com/photo-1770836037793-95bdbf190f71?auto=format&fit=crop&w=600&q=70', alt: 'Veterinarian examining dachshund' },
-  { url: 'https://images.unsplash.com/photo-1770836037289-e00e5f351d11?auto=format&fit=crop&w=600&q=70', alt: 'Veterinarian examining dog' },
-  { url: 'https://images.unsplash.com/photo-1563460716037-460a3ad24ba9?auto=format&fit=crop&w=600&q=70', alt: 'Dog and cat together' },
-  { url: 'https://images.unsplash.com/photo-1534361960057-19889db9621e?auto=format&fit=crop&w=600&q=70', alt: 'Pet grooming' },
-  { url: 'https://images.unsplash.com/photo-1624956578877-4948166c5dcb?auto=format&fit=crop&w=600&q=70', alt: 'Dog outdoors' },
-  { url: 'https://images.unsplash.com/photo-1700665537650-1bf37979aae0?auto=format&fit=crop&w=600&q=70', alt: 'Veterinarian with small dog' },
+  // IMAGES: replace with real client photos after approval
+  { url: 'https://images.unsplash.com/photo-1548767797-d0e5f4c3c8d3?auto=format&fit=crop&w=1200&q=70', alt: 'Veterinario atendiendo un perro' },
+  { url: 'https://images.unsplash.com/photo-1583511655826-05700d52f4d9?auto=format&fit=crop&w=1200&q=70', alt: 'Perro en consulta veterinaria' },
+  { url: 'https://images.unsplash.com/photo-1596495578065-6e0763fa1178?auto=format&fit=crop&w=1200&q=70', alt: 'Gato en clínica veterinaria' },
+  { url: 'https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=1200&q=70', alt: 'Perro feliz' },
+  { url: 'https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=1200&q=70', alt: 'Mascota en exteriores' },
+  { url: 'https://images.unsplash.com/photo-1581888227599-779811939961?auto=format&fit=crop&w=1200&q=70', alt: 'Equipo veterinario' },
 ];
 
 const SERVICE_ICONS = [
@@ -58,8 +59,8 @@ const i18n = {
     emergencyStripSub: 'Siempre disponibles cuando tu mascota lo necesita',
     trustStats: [
       { value: '24/7', label: 'Emergencias' },
+      { value: '4.7/5', label: 'Google (237 reseñas)' },
       { value: '+10', label: 'Servicios' },
-      { value: '9,290+', label: 'Seguidores en Facebook' },
       { value: 'Express', label: 'Servicio' },
     ],
     services: {
@@ -82,6 +83,17 @@ const i18n = {
       ],
     },
     gallery: { eyebrow: 'Nuestro espacio', title: 'Galería', subtitle: 'Conoce a los pacientes de nuestra familia' },
+    about: {
+      eyebrow: 'Confianza respaldada por la comunidad',
+      title: 'Un hospital veterinario para tu tranquilidad',
+      p1: 'En Solera Animal Center cuidamos a perros y gatos en Liberia con atención profesional y un trato cálido.',
+      p2: 'Nuestro enfoque es simple: claridad, rapidez y acompañamiento — especialmente cuando se trata de una urgencia.',
+      stats: [
+        { label: 'Google', value: '4.7/5 · 237 reseñas' },
+        { label: 'Emergencias', value: '24/7' },
+        { label: 'Servicios', value: '+10' }
+      ]
+    },
     location: {
       eyebrow: '¿Dónde estamos?',
       title: 'Cómo Llegarnos',
@@ -127,8 +139,8 @@ const i18n = {
     emergencyStripSub: 'Always available when your pet needs us most',
     trustStats: [
       { value: '24/7', label: 'Emergencies' },
+      { value: '4.7/5', label: 'Google (237 reviews)' },
       { value: '10+', label: 'Services' },
-      { value: '9,290+', label: 'Facebook followers' },
       { value: 'Express', label: 'Service' },
     ],
     services: {
@@ -151,6 +163,17 @@ const i18n = {
       ],
     },
     gallery: { eyebrow: 'Our space', title: 'Gallery', subtitle: 'Meet our furry patients' },
+    about: {
+      eyebrow: 'Community-backed trust',
+      title: 'A veterinary hospital for your peace of mind',
+      p1: 'At Solera Animal Center, we care for dogs and cats in Liberia with professional, warm attention.',
+      p2: 'Our focus is simple: clear guidance, fast care, and support — especially when it’s urgent.',
+      stats: [
+        { label: 'Google', value: '4.7/5 · 237 reviews' },
+        { label: 'Emergency', value: '24/7' },
+        { label: 'Services', value: '10+' }
+      ]
+    },
     location: {
       eyebrow: 'Where are we?',
       title: 'How to Find Us',
@@ -526,6 +549,51 @@ function GallerySection({ t }) {
   );
 }
 
+// ===== ABOUT / TRUST =====
+function AboutTrustSection({ t }) {
+  return (
+    <section id="confianza" data-testid="about-trust-section" className="py-20" style={{ backgroundColor: 'white' }}>
+      <div className="max-w-6xl mx-auto px-6">
+        <SectionHeading eyebrow={t.about.eyebrow} title={t.about.title} />
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+          {/* Image */}
+          <div className="rounded-3xl overflow-hidden" style={{ boxShadow: '0 8px 30px rgba(0,0,0,0.10)' }}>
+            <img
+              src="https://images.unsplash.com/photo-1583336663277-620dc1996580?auto=format&fit=crop&w=1400&q=70"
+              alt={t.about.title}
+              className="w-full h-[360px] lg:h-[420px] object-cover block"
+              loading="lazy"
+            />
+          </div>
+
+          {/* Copy + Stats */}
+          <div className="rounded-3xl p-10" style={{ backgroundColor: C.cream, border: `1px solid ${C.border}` }}>
+            <p className="text-lg leading-relaxed mb-5" style={{ color: C.textPrimary, fontFamily: "'Outfit', sans-serif" }}>
+              {t.about.p1}
+            </p>
+            <p className="text-lg leading-relaxed mb-8" style={{ color: C.textSecondary, fontFamily: "'Outfit', sans-serif" }}>
+              {t.about.p2}
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              {t.about.stats.map((s, idx) => (
+                <div key={idx} className="rounded-2xl p-5" style={{ backgroundColor: 'white', border: `1px solid ${C.border}` }}>
+                  <div className="text-xs font-bold uppercase tracking-widest mb-2" style={{ color: C.green, fontFamily: "'Outfit', sans-serif" }}>
+                    {s.label}
+                  </div>
+                  <div className="text-base font-semibold" style={{ color: C.textPrimary, fontFamily: "'Outfit', sans-serif" }}>
+                    {s.value}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 // ===== LOCATION =====
 function LocationSection({ t }) {
   return (
@@ -801,6 +869,7 @@ export default function SoleraLanding() {
         <EmergencyStrip t={t} />
         <ServicesSection t={t} />
         <GallerySection t={t} />
+        <AboutTrustSection t={t} />
         <LocationSection t={t} />
         <ContactSection t={t} />
         <PricingSection t={t} />
