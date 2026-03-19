@@ -1,0 +1,150 @@
+{
+  "brand_identity": {
+    "name": "Solera Animal Center",
+    "tone": "Premium, Warm, Trustworthy, Organic, Medical Excellence",
+    "target_audience": "Costa Rican pet owners (Liberia/Guanacaste) & Expats/Tourists",
+    "archetype": "Organic & Earthy"
+  },
+  "typography": {
+    "primary_font": "Fraunces",
+    "secondary_font": "Outfit",
+    "font_loading_instructions": "Import from Google Fonts: https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;400;600;700&family=Outfit:wght@300;400;500;600;700&display=swap",
+    "usage": {
+      "h1": "font-serif text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight text-primary-900",
+      "h2": "font-serif text-3xl md:text-4xl font-medium tracking-tight text-primary-800",
+      "h3": "font-serif text-2xl font-medium text-primary-800",
+      "body": "font-sans text-base md:text-lg leading-relaxed text-stone-600",
+      "caption": "font-sans text-sm tracking-wide uppercase text-stone-500",
+      "button": "font-sans font-medium tracking-wide"
+    }
+  },
+  "colors": {
+    "palette": {
+      "primary": {
+        "DEFAULT": "#4a7c59",
+        "50": "#f2f7f4",
+        "100": "#e1ebe5",
+        "200": "#c3d9cc",
+        "300": "#9bbead",
+        "400": "#749e8a",
+        "500": "#548368",
+        "600": "#4a7c59",
+        "700": "#3d6349",
+        "800": "#334f3c",
+        "900": "#2a4133"
+      },
+      "secondary": {
+        "DEFAULT": "#f5f0e8",
+        "50": "#fbf9f6",
+        "100": "#f5f0e8",
+        "200": "#ebe0d1",
+        "300": "#dec8b0",
+        "800": "#5c4d3c",
+        "900": "#4a3e30"
+      },
+      "accent": {
+        "DEFAULT": "#d4a373",
+        "light": "#faedcd",
+        "dark": "#bc6c25"
+      },
+      "neutral": {
+        "white": "#ffffff",
+        "off_white": "#fafaf9",
+        "stone_50": "#fafaf9",
+        "stone_100": "#f5f5f4",
+        "stone_200": "#e7e5e4",
+        "stone_800": "#292524",
+        "stone_900": "#1c1917"
+      }
+    },
+    "semantic": {
+      "background": "bg-[#fbf9f6]",
+      "surface": "bg-white",
+      "surface_muted": "bg-[#f5f0e8]",
+      "text_primary": "text-[#1c1917]",
+      "text_secondary": "text-[#57534e]",
+      "border_subtle": "border-[#e7e5e4]",
+      "primary_btn_bg": "bg-[#4a7c59] hover:bg-[#3d6349]",
+      "primary_btn_text": "text-white"
+    }
+  },
+  "layout_strategy": {
+    "spacing": {
+      "section_py": "py-20 md:py-32",
+      "container_px": "px-6 md:px-12 lg:px-20",
+      "gap_default": "gap-8"
+    },
+    "grid_system": {
+      "services": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6",
+      "bento_hero": "grid grid-cols-1 lg:grid-cols-12 gap-4 h-auto lg:h-[80vh]"
+    },
+    "radius": {
+      "card": "rounded-2xl",
+      "button": "rounded-full",
+      "image": "rounded-3xl"
+    }
+  },
+  "component_rules": {
+    "buttons": {
+      "primary": "rounded-full px-8 py-4 bg-[#4a7c59] text-white hover:bg-[#3d6349] transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 font-medium",
+      "secondary": "rounded-full px-8 py-4 bg-[#f5f0e8] text-[#4a7c59] hover:bg-[#ebe0d1] transition-all duration-300 font-medium",
+      "whatsapp_floating": "fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform duration-300 flex items-center gap-2"
+    },
+    "cards": {
+      "service": "bg-white p-8 rounded-2xl shadow-sm border border-[#e7e5e4] hover:shadow-md hover:border-[#4a7c59]/30 transition-all duration-300 group",
+      "pricing": "bg-white p-8 rounded-3xl shadow-lg border border-[#e7e5e4] relative overflow-hidden"
+    },
+    "navbar": {
+      "style": "fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-6xl z-50 bg-white/80 backdrop-blur-xl border border-white/20 shadow-sm rounded-full px-6 py-3 flex justify-between items-center"
+    }
+  },
+  "image_assets": {
+    "hero_bg": "https://images.unsplash.com/photo-1548699897-26df6901ca69?auto=format&fit=crop&q=80",
+    "hero_alt": "Veterinarian holding puppy smiling",
+    "services": {
+      "surgery": "https://images.unsplash.com/photo-1770836037326-d2df574278b3?auto=format&fit=crop&q=80",
+      "consultation": "https://images.unsplash.com/photo-1733783489145-f3d3ee7a9ccf?auto=format&fit=crop&q=80",
+      "grooming": "https://images.unsplash.com/photo-1534361960057-19889db9621e?auto=format&fit=crop&q=80"
+    },
+    "gallery": [
+      {
+        "url": "https://images.unsplash.com/photo-1679067652135-324b9535d288?auto=format&fit=crop&q=80",
+        "alt": "Happy dog in nature"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1758924093181-c31e7ad291cb?auto=format&fit=crop&q=80",
+        "alt": "Modern waiting room"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1770836037793-95bdbf190f71?auto=format&fit=crop&q=80",
+        "alt": "Dachshund checkup"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1681771768436-f5b67b83e194?auto=format&fit=crop&q=80",
+        "alt": "White dog clinic"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1624956578877-4948166c5dcb?auto=format&fit=crop&q=80",
+        "alt": "Brown dog grass"
+      }
+    ]
+  },
+  "content_strategy": {
+    "language_toggle": "Use a switch or toggle button: ES (Español) / EN (English). Default to Español.",
+    "cta_text": {
+      "es": "Escríbenos por WhatsApp",
+      "en": "Chat on WhatsApp"
+    },
+    "emergency_strip": "Use vivid red or dark orange accent for 'Emergencias 24/7' strip. Ensure high visibility.",
+    "maps_embed": "Use a placeholder Google Maps iframe pointing to 'Solera Animal Center, Liberia, Guanacaste'"
+  },
+  "universal_guidelines": [
+    "Do not use gradients for backgrounds, use solid warm creams or soft noise textures.",
+    "Use 2x padding everywhere. 'p-8' is the minimum for containers.",
+    "Round everything. No sharp corners.",
+    "Shadows should be colored: shadow-emerald-900/5, not shadow-black.",
+    "Use Lucide-React icons with stroke-width={1.5} for elegance.",
+    "Interactive elements must have hover states (scale, color shift, or shadow boost).",
+    "Ensure text contrast is high (Stone-600 for body, Stone-900 for heads) against Cream backgrounds."
+  ]
+}
