@@ -1,0 +1,103 @@
+{
+  "project_name": "Clínica Dental Santa Ana",
+  "theme": "light",
+  "archetype": "Archetype 1 (Organic & Earthy with Medical Variation)",
+  "colors": {
+    "background": "#FFFFFF",
+    "surface": "#FDFBF7",
+    "primary": "#1B6CA8",
+    "primary_hover": "#155A8C",
+    "secondary": "#E8F0F7",
+    "accent_whatsapp": "#25D366",
+    "accent_whatsapp_hover": "#1EBE5D",
+    "text_primary": "#0F172A",
+    "text_secondary": "#475569",
+    "border": "#E2E8F0"
+  },
+  "typography": {
+    "heading_font": "Outfit",
+    "body_font": "Manrope",
+    "h1": "text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#0F172A] leading-tight",
+    "h2": "text-3xl sm:text-4xl font-semibold tracking-tight text-[#0F172A]",
+    "h3": "text-xl sm:text-2xl font-medium text-[#0F172A]",
+    "body": "text-base md:text-lg text-[#475569] leading-relaxed"
+  },
+  "spacing": {
+    "section_padding": "py-20 md:py-32",
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "gap_standard": "gap-8"
+  },
+  "layout_patterns": {
+    "hero": "Two-column mobile-first layout. Text on left, image on right (or top/bottom on mobile). Must include a floating trust badge ('5.0★ Google rating') overlapping the image.",
+    "services_grid": "4-column grid on desktop, 2 on tablet, 1 on mobile (grid-cols-1 md:grid-cols-2 lg:grid-cols-4). Cards should have generous padding (p-8).",
+    "why_us": "Grid or flex layout emphasizing trust signals (20+ años de experiencia, Horario Lunes a Sábado, Atención Personalizada).",
+    "about_doctor": "Asymmetrical layout. Large portrait photo with subtle rounded corners overlapping a soft #FDFBF7 background block. Emphasize technology differentiator.",
+    "gallery": "Responsive grid or Shadcn carousel showing 4+ high-quality clinic interior images.",
+    "pricing": "3-column grid for Nexo Sites plans teaser. Use subtle glassmorphism or soft borders to distinguish the 'Popular' plan.",
+    "contact": "Include embedded Google Maps (iframe), address, hours, and direct WhatsApp links.",
+    "footer": "Clean minimal footer with links, copyright, and Nexo Sites branding."
+  },
+  "components": {
+    "buttons": {
+      "primary_whatsapp": "bg-[#25D366] text-white hover:bg-[#1EBE5D] font-medium rounded-full px-8 py-4 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 inline-flex items-center gap-2",
+      "secondary_blue": "bg-[#1B6CA8] text-white hover:bg-[#155A8C] font-medium rounded-full px-8 py-4 transition-all duration-300 shadow-md hover:shadow-lg inline-flex items-center gap-2",
+      "outline": "border-2 border-[#1B6CA8] text-[#1B6CA8] hover:bg-[#1B6CA8] hover:text-white rounded-full px-8 py-4 transition-all duration-300 inline-flex items-center gap-2"
+    },
+    "cards": {
+      "service": "bg-white p-8 rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.03)] border border-slate-100 hover:shadow-[0_8px_30px_rgba(27,108,168,0.1)] hover:-translate-y-1 transition-all duration-300 group cursor-pointer h-full flex flex-col items-start",
+      "pricing": "bg-white p-8 rounded-3xl border border-slate-100 relative overflow-hidden flex flex-col"
+    },
+    "badges": {
+      "trust": "bg-white/90 backdrop-blur-md px-4 py-2 rounded-full shadow-lg border border-slate-100 flex items-center gap-2 font-medium text-sm text-slate-800"
+    }
+  },
+  "media": {
+    "hero": {
+      "url": "https://images.pexels.com/photos/3845843/pexels-photo-3845843.jpeg",
+      "alt": "Paciente dental feliz sonriendo",
+      "category": "hero"
+    },
+    "doctor": {
+      "url": "https://images.pexels.com/photos/4687341/pexels-photo-4687341.jpeg",
+      "alt": "Dra. Mónica Gutiérrez Pereira",
+      "category": "about_doctor"
+    },
+    "gallery": [
+      {
+        "url": "https://images.pexels.com/photos/4269276/pexels-photo-4269276.jpeg",
+        "alt": "Interior moderno de la clínica dental",
+        "category": "gallery"
+      },
+      {
+        "url": "https://images.pexels.com/photos/9957423/pexels-photo-9957423.jpeg",
+        "alt": "Sillón dental de alta tecnología",
+        "category": "gallery"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1762625570087-6d98fca29531",
+        "alt": "Sala de espera de la clínica",
+        "category": "gallery"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1629909613654-28e377c37b09",
+        "alt": "Equipamiento de la clínica",
+        "category": "gallery"
+      }
+    ]
+  },
+  "animations": {
+    "scroll_reveal": "Use framer-motion for staggered fade-up (opacity 0 to 1, y: 20 to 0) as user scrolls down sections.",
+    "hover_states": "Micro-interactions on cards and buttons. Avoid heavy animations; keep it clinical and precise."
+  },
+  "instructions_to_main_agent": [
+    "Language MUST be 100% Spanish.",
+    "No generic testimonial cards due to low review count. Use a '5.0★ en Google' trust badge in the Hero instead.",
+    "Implement a Sticky Floating WhatsApp button on bottom-right (visible only on mobile `md:hidden` or scaled appropriately).",
+    "All primary CTAs link to WhatsApp sales.",
+    "Use Lucide-react icons for services and UI elements.",
+    "Generate 8 services for the grid (e.g., Limpieza Dental, Ortodoncia, Implantes, Blanqueamiento, Endodoncia, Odontopediatría, Prótesis, Cirugía Oral).",
+    "Ensure the hero background is clean. If overlaying text on image, use proper text shadow or a gradient overlay.",
+    "Do NOT use Inter or Roboto for headings. Use Outfit (Google Fonts) for H1-H6, and Manrope for paragraphs.",
+    "Add `data-testid` to all interactive elements, e.g., `data-testid='hero-whatsapp-btn'`, `data-testid='service-card-1'`."
+  ]
+}
