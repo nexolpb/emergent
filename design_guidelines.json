@@ -1,0 +1,155 @@
+{
+  "theme_and_archetype": {
+    "domain": "Auto repair / taller automotriz integral",
+    "theme": "Mixed (Dark / Light Alternating)",
+    "archetype": "Archetype 2 (The Performance Pro / Automotive Adaption)",
+    "mood": "Professional, reliable, high-performance, trustworthy, transparent.",
+    "instructions_to_main_agent": "Ensure the site feels like a premium, trustworthy automotive repair center. High contrast is essential. Follow the strict alternating section rhythm: Dark hero -> light services -> dark why us -> light how it works -> dark CTA -> light location -> dark footer."
+  },
+  "typography": {
+    "font_families": {
+      "headings": "Barlow Condensed",
+      "body": "Inter",
+      "install_command": "npx @fontsource/barlow-condensed npx @fontsource/inter"
+    },
+    "hierarchy": {
+      "h1": "text-5xl sm:text-6xl md:text-7xl font-black uppercase tracking-tight leading-[0.9]",
+      "h2": "text-4xl sm:text-5xl font-bold uppercase tracking-tight",
+      "h3": "text-2xl sm:text-3xl font-semibold uppercase tracking-tight",
+      "h4": "text-xl font-bold uppercase",
+      "body": "text-base sm:text-lg text-gray-300 font-normal leading-relaxed",
+      "small": "text-sm text-gray-500 font-medium uppercase tracking-widest"
+    },
+    "rules": "Never use Inter for headings. Always apply `uppercase` and `tracking-tight` to Barlow Condensed headings. Body copy should use standard Inter."
+  },
+  "color_palette": {
+    "dark": {
+      "background": "#212121",
+      "surface": "#2A2A2A",
+      "border": "#333333",
+      "text_primary": "#FFFFFF",
+      "text_secondary": "#A1A1AA"
+    },
+    "light": {
+      "background": "#F5F5F5",
+      "surface": "#FFFFFF",
+      "border": "#E5E5E5",
+      "text_primary": "#1A1A1A",
+      "text_secondary": "#52525B"
+    },
+    "brand": {
+      "primary": "#C62828",
+      "primary_hover": "#B71C1C",
+      "whatsapp": "#25D366"
+    },
+    "rules": "Use the dark charcoal (#212121) as the base for dark sections. The red accent (#C62828) is for primary CTAs, active states, and small decorative highlights (like 1px borders or icons). CTAs must always have white text."
+  },
+  "spacing_and_layout": {
+    "container": "max-w-7xl mx-auto px-6 md:px-12",
+    "section_padding": "py-24 md:py-32",
+    "card_padding": "p-8",
+    "gap_system": {
+      "tight": "gap-4",
+      "default": "gap-8",
+      "loose": "gap-16"
+    },
+    "rules": "Employ generous spacing. Alternate section backgrounds strictly as requested. Grid items must be direct children. Utilize 'Optical Alignment'."
+  },
+  "ui_components": {
+    "buttons": {
+      "primary": "bg-[#C62828] hover:bg-[#B71C1C] text-white uppercase font-bold tracking-widest px-8 py-4 rounded-none transition-all duration-300",
+      "outline": "border-2 border-[#C62828] text-[#C62828] hover:bg-[#C62828] hover:text-white uppercase font-bold tracking-widest px-8 py-4 rounded-none transition-all duration-300",
+      "whatsapp": "fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#1DA851] text-white p-4 rounded-full shadow-2xl transition-transform hover:scale-110 flex items-center justify-center"
+    },
+    "cards": {
+      "light": "bg-white border border-[#E5E5E5] p-8 shadow-sm hover:shadow-md transition-shadow",
+      "dark": "bg-[#2A2A2A] border border-[#333333] p-8"
+    },
+    "badges": "inline-flex items-center px-3 py-1 bg-[#2A2A2A] border border-[#333333] text-white text-xs font-bold uppercase tracking-widest"
+  },
+  "motion_and_interactions": {
+    "libraries": ["framer-motion", "lucide-react"],
+    "rules": "Subtle entrance animations. Use Framer Motion for scroll-triggered fades and slide-ups. Add hover lifts (-translate-y-1) to service cards."
+  },
+  "sections": [
+    {
+      "name": "Header",
+      "theme": "Dark",
+      "layout": "Fixed top, bg-[#212121]/90 backdrop-blur-md border-b border-[#333333] z-40. Logo left, Nav right with CTA."
+    },
+    {
+      "name": "Hero",
+      "theme": "Dark",
+      "layout": "Min-height 90vh, flex items-center relative. Background image (well-lit garage) with bg-[#212121]/80 overlay. Left-aligned typography. H1 'La Firma Automotriz', subheadline, primary CTA 'Agenda tu Cita'.",
+      "image_key": "hero_garage"
+    },
+    {
+      "name": "Vehicles Banner",
+      "theme": "Dark",
+      "layout": "Thin strip right below hero. bg-[#1A1A1A] py-8. Marquee or flex row of car brand logos (Toyota, Nissan, Hyundai, Honda, Ford) to establish scope of service."
+    },
+    {
+      "name": "Services",
+      "theme": "Light",
+      "layout": "bg-[#F5F5F5]. Grid 1 col mobile, 3 cols desktop. 6 cards: Diagnóstico, Frenos, Mantenimiento Preventivo, Suspensión, Llantas, Aire Acondicionado. Each card has a Lucide icon in red (#C62828)."
+    },
+    {
+      "name": "Why Us / Trust",
+      "theme": "Dark",
+      "layout": "bg-[#212121]. Split layout: 1/2 image of mechanic working, 1/2 content. H2 '¿Por qué elegirnos?'. Bullet points with check icons: Transparencia total, Mecánicos certificados, Repuestos de calidad, Garantía en servicio.",
+      "image_key": "mechanic_trust"
+    },
+    {
+      "name": "How It Works",
+      "theme": "Light",
+      "layout": "bg-white. 3-step vertical line or horizontal cards. 1. Contacto/Cita 2. Diagnóstico y Presupuesto 3. Reparación y Entrega."
+    },
+    {
+      "name": "Reviews / Trust",
+      "theme": "Light",
+      "layout": "bg-[#F5F5F5] (same block as How it works or distinct). Masonry or carousel of 3 testimonials from local customers."
+    },
+    {
+      "name": "Pricing Teaser",
+      "theme": "Light",
+      "layout": "Included inside the Services or How it works section, mentioning 'Precios transparentes desde...'."
+    },
+    {
+      "name": "CTA Band",
+      "theme": "Brand Red",
+      "layout": "bg-[#C62828] py-16 text-center text-white. H2 '¿Tu auto necesita mantenimiento?'. Large secondary CTA button (white bg, red text)."
+    },
+    {
+      "name": "Location / Contact",
+      "theme": "Light",
+      "layout": "bg-white. Split layout: Address/Hours/Contact info on left, embedded map (iframe or placeholder visual) on right. Mention 'Curridabat, San José'."
+    },
+    {
+      "name": "Footer",
+      "theme": "Dark",
+      "layout": "bg-[#111111] border-t border-[#333333]. Simple links, copyright 'Nexo Sites'."
+    }
+  ],
+  "image_urls": {
+    "hero_garage": {
+      "url": "https://images.pexels.com/photos/33814736/pexels-photo-33814736.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Well-lit garage with a car on a hydraulic lift, used as hero background with dark overlay.",
+      "category": "hero"
+    },
+    "mechanic_trust": {
+      "url": "https://images.unsplash.com/photo-1770656505709-fd97236989b9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTJ8MHwxfHNlYXJjaHwyfHxtZWNoYW5pYyUyMHJlcGFpcmluZyUyMGNhcnxlbnwwfHx8fDE3NzUxODQzNDN8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Mechanic working on car engine, used in the 'Why Us' section.",
+      "category": "feature"
+    },
+    "services_bg": {
+      "url": "https://images.pexels.com/photos/33814733/pexels-photo-33814733.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Spacious indoor car garage, can be used as subtle background or supplementary image.",
+      "category": "background"
+    },
+    "customer_review": {
+      "url": "https://images.pexels.com/photos/36729874/pexels-photo-36729874.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Happy customer inside a vehicle, can be used near reviews or trust sections.",
+      "category": "testimonial"
+    }
+  }
+}
